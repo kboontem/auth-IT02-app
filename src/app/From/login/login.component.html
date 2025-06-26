@@ -1,0 +1,44 @@
+<div class="container">
+  <mat-card-header style="background-color: rgb(26,153,0);">
+    <div class="row">
+      <div class="col">
+        <h4 class="fas-font-IBM" style="color: white;">
+          IT 02-1
+        </h4>
+      </div>
+    </div>
+  </mat-card-header>
+  <mat-card class="p-3">
+    <div class="row">
+      <div class="col">
+        <div class="row">
+          <div class="col-5" style="text-align: right;padding: 10px 13px;">
+            User
+          </div>
+          <div class="col-7" style="padding: 10px 13px;">
+            <input matInput type="text" class="form-control" [(ngModel)]="Username" title="Username">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-5" style="text-align: right;padding: 10px 13px;">
+            Password
+          </div>
+          <div class="col-7" style="padding: 10px 13px;">
+            <input matInput type="password" class="form-control" [(ngModel)]="Password" title="Password">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <button mat-raised-button style="background-color: rgb(31, 188, 83);color: white;"
+          (click)="login()">ลงชื่อเข้าใช้งาน</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <a class="btn-trn" routerLink="/register">สมัครสมาชิก</a>
+      </div>
+    </div>
+  </mat-card>
+</div>
